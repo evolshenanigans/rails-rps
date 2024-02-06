@@ -1,0 +1,15 @@
+<p><strong>We played scissors!</strong></p>
+<p><strong> They played <%= @computer_choice %>!</strong></p>
+
+<h2>Result:</h2>
+<p><%= @result %></p>
+
+<% if @result == 'We won!' %>
+  <p>Congratulations! You won this round.</p>
+<% elsif @result == 'We lost!' %>
+  <p>Sorry, you lost this round.</p>
+<% else %>
+  <p>It's a tie!</p>
+<% end %>
+
+<a href="/">Rules</a>
